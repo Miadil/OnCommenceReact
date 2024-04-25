@@ -1,6 +1,6 @@
 import viteLogo from "/vite.svg";
 
-function NavBar() {
+function NavBar({ firstName, age }) {
   return (
     <div className="globalNav">
       <a href="https://vitejs.dev" target="_blank">
@@ -14,6 +14,8 @@ function NavBar() {
           <a href="#">CONTACT</a>
         </li>
       </ul>
+      {firstName}
+      <p>{age}</p>
     </div>
   );
 }
